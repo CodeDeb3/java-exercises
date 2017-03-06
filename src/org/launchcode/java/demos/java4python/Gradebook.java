@@ -9,6 +9,7 @@ import java.util.Scanner;
 public class Gradebook {
 
     public static void main(String[] args) {
+        // initialize 2 objects with data type  string and double
 
         ArrayList<String> students = new ArrayList<>();
         ArrayList<Double> grades = new ArrayList<>();
@@ -18,9 +19,12 @@ public class Gradebook {
         System.out.println("Enter your students (or ENTER to finish):");
 
         // Get student names
+        //In this example, we prompt the user for a name, which we read in via in.nextLine() when they hit the enter key.
         do {
             newStudent = in.nextLine();
-
+        /*each student that entered (that is, each non-empty line),
+        we add the new string to the end of our list with students.add(newStudent)
+        */
             if (!newStudent.equals("")) {
                 students.add(newStudent);
             }
@@ -28,6 +32,7 @@ public class Gradebook {
         } while(!newStudent.equals(""));
 
         // Get student grades
+        //
         for (String student : students) {
             System.out.print("Grade for " + student + ": ");
             Double grade = in.nextDouble();

@@ -7,8 +7,8 @@ public class Arrays {
 
     public static void main(String[] args) {
 
-        System.out.println("printArrayOfNumbers :: ");
-        printArrayOfNumbers();
+//        System.out.println("printArrayOfNumbers :: ");
+//        printArrayOfNumbers();
 
         System.out.println("arrayCreation :: ");
         arrayCreation();
@@ -43,7 +43,6 @@ public class Arrays {
         for (int j : someOtherInts) {
             System.out.println(j);
         }
-
 
     }
 }

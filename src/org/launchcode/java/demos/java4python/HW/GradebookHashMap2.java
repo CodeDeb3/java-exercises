@@ -29,14 +29,16 @@ public class GradebookHashMap2 {
 
             if (newStudentId !=0){
                 System.out.print("Name: ");
-                String newName = in.nextLine();
+                String newName = in.next();     // next student to add to list
                 students.put(newStudentId, newName);
 
                 // Read in the newline before looping back
                 in.nextLine();
             }
 
-        } while(newStudentId !=0);
+        }
+
+        while(newStudentId !=0);
 
         // Print class roster
         System.out.println("\nClass roster:");

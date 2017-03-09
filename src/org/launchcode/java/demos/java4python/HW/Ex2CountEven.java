@@ -22,8 +22,8 @@ public class Ex2CountEven {
     private static Integer getSumOfEvens(ArrayList<Integer> numbers) {
         Integer count = 0;
         for(Integer i : numbers) {
-            if(numbers.get(i) % 2 == 0){
-                count += numbers.get(i);
+            if(i % 2 == 0){
+                count += i;
             }
         }
         return count;
